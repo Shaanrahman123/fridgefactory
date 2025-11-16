@@ -21,7 +21,7 @@ export default function ContactPage() {
             <section className="relative h-[50vh] w-full overflow-hidden flex items-center justify-center p-6 text-center">
                 <Image
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2940&auto=format&fit=crop"
-                    alt="Contact AZ Refrigeration"
+                    alt="Contact Star Refrigeration"
                     fill
                     style={{ objectFit: "cover" }}
                     priority
@@ -182,25 +182,25 @@ export default function ContactPage() {
                             {/* Info List */}
                             <ul className="space-y-4 mb-8">
                                 <li className="flex items-start">
-                                    <MapPin size={24} className="flex-shrink-0 mr-4 mt-1 text-blue-600" />
+                                    <MapPin size={24} className="shrink-0 mr-4 mt-1 text-blue-600" />
                                     <div>
                                         <h4 className="text-lg font-semibold text-gray-900">Address</h4>
-                                        <p className="text-gray-600">71/15, Block-21, Ground Floor, Near Jawala Mata Mandir, Moti Nagar, New Delhi - 110015</p>
+                                        <p className="text-gray-600">Village-Sakri,Post-Sakri Madhubani,Bihar-847239</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start">
-                                    <Phone size={24} className="flex-shrink-0 mr-4 mt-1 text-blue-600" />
+                                    <Phone size={24} className="shrink-0 mr-4 mt-1 text-blue-600" />
                                     <div>
                                         <h4 className="text-lg font-semibold text-gray-900">Phone</h4>
-                                        <p className="text-gray-600">+91 96545 72626, +91 70116 82627</p>
+                                        <p className="text-gray-600">+91-8178198555</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start">
-                                    <Mail size={24} className="flex-shrink-0 mr-4 mt-1 text-blue-600" />
+                                    <Mail size={24} className="shrink-0 mr-4 mt-1 text-blue-600" />
                                     <div>
                                         <h4 className="text-lg font-semibold text-gray-900">Email</h4>
-                                        <p className="text-gray-600">azsalesandservice@gmail.com</p>
-                                        <p className="text-gray-600">abdulaziz230693@gmail.com</p>
+                                        <p className="text-gray-600">irshadali90905@gmail.com</p>
+                                        {/* <p className="text-gray-600">abdulaziz230693@gmail.com</p> */}
                                     </div>
                                 </li>
                             </ul>
@@ -218,7 +218,7 @@ export default function ContactPage() {
                             {/* Map */}
                             <div className="rounded-xl shadow-lg overflow-hidden h-96">
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.123512117188!2d77.1323386754025!3d28.65606657565116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03b0d2381f9b%3A0xe5452f13dd454b6c!2sAZ%20Refrigeration%20and%20Air%20Cond.!5e0!3m2!1sen!2sin!4v1731261895610!5m2!1sen!2sin"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4441.56151626964!2d86.07756867610543!3d26.217859389604666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39edcfcf1ba20f81%3A0xf6dc5bf2cd77afd7!2sSakri%20Post%20Office!5e1!3m2!1sen!2sin!4v1763304389016!5m2!1sen!2sin"
                                     width="100%"
                                     height="100%"
                                     style={{ border: 0 }}

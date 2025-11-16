@@ -116,15 +116,15 @@ export default function ContactSection() {
                     <div data-aos="fade-left" data-aos-delay="300">
                         <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 mb-6">
                             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                                AZ Refrigeration and Air Cond.
+                                Star Refrigeration
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
-                                71/15, Moti Nagar Rd, Block 71, Moti Nagar, Delhi, 110015
+                                Village-Sakri,Post-Sakri Madhubani,Bihar-847239
                             </p>
                         </div>
                         <div className="rounded-xl shadow-lg overflow-hidden h-96 lg:h-[calc(100%-8.5rem)]">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.12328246479!2d77.1245030752533!3d28.65604108253198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03b0a7fffffff%3A0xe10452a32c510e34!2sAZ%20Refrigeration%20and%20Air%20Cond.!5e0!3m2!1sen!2sin!4v1731068218942!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4441.56151626964!2d86.07756867610543!3d26.217859389604666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39edcfcf1ba20f81%3A0xf6dc5bf2cd77afd7!2sSakri%20Post%20Office!5e1!3m2!1sen!2sin!4v1763304389016!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
@@ -132,6 +132,7 @@ export default function ContactSection() {
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
                             ></iframe>
+
                         </div>
                     </div>
                 </div>

@@ -63,7 +63,7 @@ export default function Footer() {
                         {/* --- Column 1: Company Info --- */}
                         <div data-aos="fade-up" data-aos-delay="100">
                             <Link href="/" className="text-3xl font-extrabold text-white mb-4 block">
-                                AZ REFRIGERATION
+                                Star Refrigeration
                             </Link>
                             <p className="text-gray-400 mb-6 leading-relaxed">
                                 Explore a full line of easy-to-install and effective Cold Storage Plant, Walk In Cooler Room, PUF Panel Room, and more for all your controlled temperature needs.
@@ -104,20 +104,20 @@ export default function Footer() {
                             <ul className="space-y-4">
                                 <ContactItem
                                     icon={MapPin}
-                                    text="71/15, Block-21, Ground Floor, Near Jawala Mata Mandir, Moti Nagar, New Delhi - 110015"
+                                    text="Village-Sakri,Post-Sakri Madhubani,Bihar-847239"
                                 />
                                 <ContactItem
                                     icon={Phone}
-                                    text="+91 96545 72626 / +91 70116 82627"
+                                    text="+91-8178198555"
                                 />
                                 <ContactItem
                                     icon={Mail}
-                                    text="azsalesandservice@gmail.com"
+                                    text="irshadali90905@gmail.com"
                                 />
-                                <ContactItem
+                                {/* <ContactItem
                                     icon={Mail}
                                     text="abdulaziz230693@gmail.com"
-                                />
+                                /> */}
                             </ul>
                         </div>
                     </div>
@@ -128,12 +128,12 @@ export default function Footer() {
                     <div className="container mx-auto px-6 text-center text-gray-500 text-sm">
                         Copyright ©{new Date().getFullYear()} All Rights Reserved | Design & Developed by{" "}
                         <a
-                            href="https://zolexmart.com/"
+                            href="https://kiswasoft.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-blue-400 hover:text-blue-300 transition-colors"
                         >
-                            ZolexMart Pvt Ltd
+                            Kiswasoft Technologies
                         </a>
                     </div>
                 </div>

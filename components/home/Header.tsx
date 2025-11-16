@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown, Phone } from "lucide-react";
+import { Menu, X, ChevronDown, Phone, Mail } from "lucide-react";
 
 // Product list (unchanged)
 const products = [
@@ -91,18 +91,18 @@ export default function Header() {
                     </span>
                     <div className="flex items-center space-x-6">
                         <a
-                            href="tel:+919654572626"
+                            href="tel:+918178198555"
                             className="flex items-center opacity-80 hover:opacity-100 transition-opacity"
                         >
                             <Phone size={14} className="mr-2" />
-                            +91 96545 72626
+                            +91-81781 98555
                         </a>
                         <a
-                            href="tel:+917011682627"
+                            href="mailto:irshadali90905@gmail.com"
                             className="flex items-center opacity-80 hover:opacity-100 transition-opacity"
                         >
-                            <Phone size={14} className="mr-2" />
-                            +91 70116 82627
+                            <Mail size={14} className="mr-2" />
+                            irshadali90905@gmail.com
                         </a>
                     </div>
                 </div>
@@ -115,7 +115,7 @@ export default function Header() {
 
                         {/* Logo */}
                         <Link href="/" className={logoClasses}>
-                            AZ REFRIGERATION
+                            Star Refrigeration
                         </Link>
 
                         {/* Desktop Navigation */}
@@ -193,7 +193,7 @@ export default function Header() {
                     {/* Mobile Menu Header */}
                     <div className="flex justify-between items-center h-20 px-6 border-b border-slate-200">
                         <Link href="/" onClick={closeMobileMenu} className="text-xl font-extrabold text-indigo-600">
-                            AZ REFRIGERATION
+                            Star Refrigeration
                         </Link>
                         <button
                             onClick={closeMobileMenu}
@@ -267,18 +267,18 @@ export default function Header() {
                         </Link>
                         <div className="flex flex-col space-y-3 pt-6 text-sm">
                             <a
-                                href="tel:+919654572626"
+                                href="tel:+918178198555"
                                 className="flex items-center justify-center text-slate-700 hover:text-indigo-600"
                             >
                                 <Phone size={14} className="mr-2" />
-                                +91 96545 72626
+                                +91-81781 98555
                             </a>
                             <a
-                                href="tel:+917011682627"
+                                href="mailto:irshadali90905@gmail.com"
                                 className="flex items-center justify-center text-slate-700 hover:text-indigo-600"
                             >
-                                <Phone size={14} className="mr-2" />
-                                +91 70116 82627
+                                <Mail size={14} className="mr-2" />
+                                irshadali90905@gmail.com
                             </a>
                         </div>
                     </div>

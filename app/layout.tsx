@@ -6,7 +6,7 @@ import Header from "@/components/home/Header";
 import Footer from "@/components/common/Footer";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
-  title: "AZ Refrigeration and Air Conditioning",
+  title: "Star Refrigeration and Air Conditioning",
   description: "Your expert partner for cold storage, chillers, and ripening chambers.",
 };
 

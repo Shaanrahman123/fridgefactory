@@ -25,7 +25,7 @@ export default function QualityAssurance() {
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
-                        AZ Refrigeration And Air Conditioning is dedicated to delivering top-tier cooling solutions. To guarantee the highest quality of products such as Cold Storage Room, Cold Room, Pre Fabricated Walk In Freezer, and more, each product undergoes rigorous testing and is closely monitored to ensure optimal performance, all while adhering to the latest industry standards by our experienced quality experts.
+                        Star Refrigeration And Air Conditioning is dedicated to delivering top-tier cooling solutions. To guarantee the highest quality of products such as Cold Storage Room, Cold Room, Pre Fabricated Walk In Freezer, and more, each product undergoes rigorous testing and is closely monitored to ensure optimal performance, all while adhering to the latest industry standards by our experienced quality experts.
                     </p>
                     <div
                         data-aos="fade-up"
