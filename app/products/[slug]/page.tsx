@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, CheckCircle, Home, ChevronRight } from "lucide-r
 // Import your data functions
 import { getProductBySlug, ProductDetail, getAllProductSlugs } from "@/lib/productDetailsData"; // Adjust path as needed
 import ContactSection from "@/components/common/ContactSection";
+import { title } from "process";
 
 // This function correctly runs on the server
 export async function generateStaticParams() {
@@ -31,19 +32,14 @@ export async function generateMetadata({ params }: ProductPageProps) {
 
     if (!product) {
         return {
-            title: "Product Not Found | Star Refrigeration",
-            description: "This product does not exist.",
+            // title: "Product Not Found", // Fallback title
+            title: "Star Refrigeration"
         };
     }
 
+    // ✅ Correct: Just return the title property
     return {
         title: `${product.name} | Star Refrigeration`,
-        description: product.shortDescription || product.description,
-        openGraph: {
-            title: product.name,
-            description: product.shortDescription,
-            images: [product.imageUrl],
-        },
     };
 }
 
