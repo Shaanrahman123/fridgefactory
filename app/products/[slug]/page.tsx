@@ -27,8 +27,9 @@ interface ProductPageProps {
 // 2. Dynamic Metadata (SEO)
 // -------------------------
 export async function generateMetadata({ params }: ProductPageProps) {
-    const { slug } = params;
-    const product = getProductBySlug(slug);
+    const resolvedParams = await params; // 👈 Unwrap the Promise
+
+    const product = getProductBySlug(resolvedParams.slug);
     const siteUrl = "https://www.starrefrigeration.in";
 
     if (!product) {
@@ -43,11 +44,11 @@ export async function generateMetadata({ params }: ProductPageProps) {
     return {
         title: `${product.name} | Star Refrigeration`,
         description: product.shortDescription || product.description,
-        alternates: { canonical: `${siteUrl}/products/${slug}` },
+        alternates: { canonical: `${siteUrl}/products/${product.name}` },
         openGraph: {
             title: product.name,
             description: product.shortDescription || product.description,
-            url: `${siteUrl}/products/${slug}`,
+            url: `${siteUrl}/products/${product.name}`,
             images: [product.imageUrl],
         },
         robots: { index: true, follow: true },
