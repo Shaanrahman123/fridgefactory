@@ -31,28 +31,34 @@ export async function generateMetadata({ params }: ProductPageProps) {
     const product = getProductBySlug(slug);
     const siteUrl = "https://www.starrefrigeration.in";
 
+    // Normalize slug
+    const normalizedSlug = slug.toLowerCase().trim();
+
     if (!product) {
         return {
             title: "Product Not Found | Star Refrigeration",
             description: "This product does not exist.",
-            alternates: { canonical: siteUrl + "/" },
+            alternates: { canonical: `${siteUrl}/` },
             robots: { index: false, follow: false },
         };
     }
 
+    const productUrl = `${siteUrl}/products/${normalizedSlug}`;
+
     return {
         title: `${product.name} | Star Refrigeration`,
         description: product.shortDescription || product.description,
-        alternates: { canonical: `${siteUrl}/products/${slug}` },
+        alternates: { canonical: productUrl },
         openGraph: {
             title: product.name,
             description: product.shortDescription || product.description,
-            url: `${siteUrl}/products/${slug}`,
+            url: productUrl,
             images: [product.imageUrl],
         },
         robots: { index: true, follow: true },
     };
 }
+
 
 
 
