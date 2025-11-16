@@ -114,16 +114,16 @@ export default function Header() {
                     <div className="flex justify-between items-center h-20">
 
                         {/* Logo */}
-                        <Link href="/" className={logoClasses}>
+                        <Link href="/" className={logoClasses} aria-label="Star Refrigeration">
                             Star Refrigeration
                         </Link>
 
                         {/* Desktop Navigation */}
                         <div className="hidden lg:flex items-center space-x-8">
-                            <Link href="/" className={linkClasses}>
+                            <Link href="/" className={linkClasses} aria-label="Star Refrigeration">
                                 Home
                             </Link>
-                            <Link href="/about" className={linkClasses}>
+                            <Link href="/about" className={linkClasses} aria-label="About Star Refrigeration">
                                 About Us
                             </Link>
 
@@ -152,6 +152,7 @@ export default function Header() {
                                                 key={product.href}
                                                 href={product.href}
                                                 className="block px-4 py-3 rounded-md hover:bg-slate-100 text-sm font-medium text-slate-700 transition-colors"
+                                                aria-label={`${product.name} Star Refrigeration`}
                                             >
                                                 {product.name}
                                             </Link>
@@ -161,7 +162,7 @@ export default function Header() {
                             </div>
 
                             {/* Contact CTA */}
-                            <Link href="/contact" className={ctaButtonClasses}>
+                            <Link href="/contact" className={ctaButtonClasses} aria-label=" Contact Star Refrigeration">
                                 Contact Us
                             </Link>
                         </div>
@@ -192,7 +193,7 @@ export default function Header() {
 
                     {/* Mobile Menu Header */}
                     <div className="flex justify-between items-center h-20 px-6 border-b border-slate-200">
-                        <Link href="/" onClick={closeMobileMenu} className="text-xl font-extrabold text-indigo-600">
+                        <Link href="/" aria-label="Star Refrigeration" onClick={closeMobileMenu} className="text-xl font-extrabold text-indigo-600">
                             Star Refrigeration
                         </Link>
                         <button
@@ -211,6 +212,7 @@ export default function Header() {
                                 href="/"
                                 className="mobile-link"
                                 onClick={closeMobileMenu}
+                                aria-label="Star Refrigeration"
                             >
                                 Home
                             </Link>
@@ -218,6 +220,7 @@ export default function Header() {
                                 href="/about"
                                 className="mobile-link"
                                 onClick={closeMobileMenu}
+                                aria-label="About Star Refrigeration"
                             >
                                 About Us
                             </Link>
@@ -246,6 +249,7 @@ export default function Header() {
                                                 href={product.href}
                                                 className="block py-3 text-base text-slate-600 hover:text-indigo-600 transition-colors"
                                                 onClick={handleProductLinkClick}
+                                                aria-label={`${product.name} Star Refrigeration`}
                                             >
                                                 {product.name}
                                             </Link>
@@ -262,6 +266,7 @@ export default function Header() {
                             href="/contact"
                             className="block w-full text-center px-5 py-3 rounded-lg text-base font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
                             onClick={closeMobileMenu}
+                            aria-label="Contact Star Refrigeration"
                         >
                             Contact Us
                         </Link>

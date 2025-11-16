@@ -52,7 +52,7 @@ export default function ContactPage() {
                 <div className="container mx-auto px-6 py-3">
                     <ol className="flex items-center space-x-2 text-sm text-gray-500">
                         <li>
-                            <Link href="/" className="flex items-center hover:text-blue-600 transition-colors">
+                            <Link href="/" className="flex items-center hover:text-blue-600 transition-colors" aria-label="Contact Star Refrigeration">
                                 <Home size={16} className="mr-2" />
                                 Home
                             </Link>
@@ -210,9 +210,9 @@ export default function ContactPage() {
                                 Follow Us
                             </h3>
                             <div className="flex space-x-4 mb-8">
-                                <SocialIcon href="#" icon={Facebook} />
-                                <SocialIcon href="#" icon={Instagram} />
-                                <SocialIcon href="#" icon={Linkedin} />
+                                <SocialIcon href="#" icon={Facebook} name='facebook' />
+                                <SocialIcon href="#" icon={Instagram} name='instagram' />
+                                <SocialIcon href="#" icon={Linkedin} name='linkedin' />
                             </div>
 
                             {/* Map */}
@@ -236,13 +236,14 @@ export default function ContactPage() {
 }
 
 // --- 2. FIX: Added types for TypeScript ---
-function SocialIcon({ href, icon: Icon }: { href: string; icon: ElementType }) {
+function SocialIcon({ href, icon: Icon, name }: { href: string; icon: ElementType, name: string }) {
     return (
         <Link
             href={href}
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full text-blue-600 hover:bg-indigo-700 hover:text-white transition-all"
+            aria-label={`${name} Star Refrigeration`}
         >
             <Icon size={24} />
         </Link>

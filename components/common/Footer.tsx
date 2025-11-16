@@ -62,7 +62,7 @@ export default function Footer() {
 
                         {/* --- Column 1: Company Info --- */}
                         <div data-aos="fade-up" data-aos-delay="100">
-                            <Link href="/" className="text-3xl font-extrabold text-white mb-4 block">
+                            <Link href="/" aria-label="Star Refrigeration" className="text-3xl font-extrabold text-white mb-4 block">
                                 Star Refrigeration
                             </Link>
                             <p className="text-gray-400 mb-6 leading-relaxed">
@@ -175,6 +175,7 @@ function SocialIcon({ href, icon: Icon }: { href: string; icon: ElementType }) {
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 flex items-center justify-center bg-slate-800 rounded-full text-blue-400 hover:bg-indigo-700 hover:text-white transition-all"
+            aria-label="Star Refrigeration"
         >
             <Icon size={20} />
         </Link>
@@ -188,6 +189,7 @@ function ProductLink({ href, name }: { href: string; name: string }) {
             <Link
                 href={href}
                 className="flex items-center text-gray-400 hover:text-white hover:translate-x-1 transition-all"
+                aria-label={`${name} Star Refrigeration`}
             >
                 <ChevronRight size={16} className="mr-2 text-blue-500" />
                 {name}

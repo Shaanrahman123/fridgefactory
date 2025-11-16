@@ -67,6 +67,7 @@ export default function AboutPage() {
                             <Link
                                 href="/"
                                 className="flex items-center hover:text-indigo-600 transition-colors"
+                                aria-label="Home Star Refrigeration"
                             >
                                 <Home size={16} className="mr-2" />
                                 Home
@@ -181,6 +182,7 @@ export default function AboutPage() {
                                      hover:shadow-lg hover:-translate-y-0.5 transform transition-all duration-300 ease-in-out"
                                 data-aos="fade-up" // Fades in from the bottom
                                 data-aos-delay="900" // Starts last
+                                aria-label="About Star Refrigeration"
                             >
                                 Read More
                                 <ArrowRight className="w-5 h-5 ml-2" />
