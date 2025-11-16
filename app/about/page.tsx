@@ -14,6 +14,15 @@ import {
     ArrowRight,
 } from "lucide-react";
 
+export const metadata = {
+    title: "About Star Refrigeration & Air Conditioning | Since 2015",
+    description:
+        "Learn about Star Refrigeration & Air Conditioning, experts in cold rooms, fruit ripening chambers, PUF panels, blast freezers and HVAC solutions.",
+    alternates: {
+        canonical: "https://www.starrefrigeration.in/about",
+    },
+};
+
 export default function AboutPage() {
 
 
@@ -182,7 +191,7 @@ export default function AboutPage() {
                                      hover:shadow-lg hover:-translate-y-0.5 transform transition-all duration-300 ease-in-out"
                                 data-aos="fade-up" // Fades in from the bottom
                                 data-aos-delay="900" // Starts last
-                                aria-label="About Star Refrigeration"
+                                aria-label="Learn more about Star Refrigeration and Air Conditioning"
                             >
                                 Read More
                                 <ArrowRight className="w-5 h-5 ml-2" />

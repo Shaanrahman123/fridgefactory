@@ -5,10 +5,26 @@ import { AosProvider } from "@/components/AosProvider";
 import Header from "@/components/home/Header";
 import Footer from "@/components/common/Footer";
 const inter = Inter({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
   title: "Star Refrigeration and Air Conditioning",
   description: "Your expert partner for cold storage, chillers, and ripening chambers.",
+  alternates: {
+    canonical: "https://www.starrefrigeration.in/",
+  },
+  openGraph: {
+    title: "Star Refrigeration and Air Conditioning",
+    description: "Providing cold rooms, chillers, ripening chambers & HVAC solutions.",
+    url: "https://www.starrefrigeration.in/",
+    siteName: "Star Refrigeration",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
+
 
 export default function RootLayout({
   children,

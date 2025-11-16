@@ -14,6 +14,16 @@ import {
 } from "lucide-react";
 import { ElementType } from "react"; // <-- 1. IMPORT ElementType
 
+
+export const metadata = {
+    title: "Contact Star Refrigeration & Air Conditioning | Call +91 8178198555",
+    description:
+        "Get in touch with Star Refrigeration & Air Conditioning for cold rooms, walk-in freezers, banana ripening chambers, and HVAC solutions.",
+    alternates: {
+        canonical: "https://www.starrefrigeration.in/contact",
+    },
+};
+
 export default function ContactPage() {
     return (
         <div className="bg-gray-50 text-gray-800">

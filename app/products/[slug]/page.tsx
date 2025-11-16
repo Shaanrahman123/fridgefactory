@@ -21,6 +21,32 @@ interface ProductPageProps {
     };
 }
 
+
+// -------------------------
+// 2. Dynamic Metadata (SEO)
+// -------------------------
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+    const product = getProductBySlug(params.slug);
+
+    if (!product) {
+        return {
+            title: "Product Not Found | Star Refrigeration",
+            description: "This product does not exist.",
+        };
+    }
+
+    return {
+        title: `${product.name} | Star Refrigeration`,
+        description: product.shortDescription || product.description,
+        openGraph: {
+            title: product.name,
+            description: product.shortDescription,
+            images: [product.imageUrl],
+        },
+    };
+}
+
+
 // This is a Server Component
 export default async function ProductPage({ params }: ProductPageProps) {
     const resolvedParams = await params; // 👈 Unwrap the Promise
