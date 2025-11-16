@@ -27,22 +27,33 @@ interface ProductPageProps {
 // 2. Dynamic Metadata (SEO)
 // -------------------------
 export async function generateMetadata({ params }: ProductPageProps) {
-    const resolvedParams = await params; // 👈 Unwrap the Promise
-
-    const product = getProductBySlug(resolvedParams.slug);
+    const { slug } = params;
+    const product = getProductBySlug(slug);
+    const siteUrl = "https://www.starrefrigeration.in";
 
     if (!product) {
         return {
-            // title: "Product Not Found", // Fallback title
-            title: "Star Refrigeration"
+            title: "Product Not Found | Star Refrigeration",
+            description: "This product does not exist.",
+            alternates: { canonical: siteUrl + "/" },
+            robots: { index: false, follow: false },
         };
     }
 
-    // ✅ Correct: Just return the title property
     return {
         title: `${product.name} | Star Refrigeration`,
+        description: product.shortDescription || product.description,
+        alternates: { canonical: `${siteUrl}/products/${slug}` },
+        openGraph: {
+            title: product.name,
+            description: product.shortDescription || product.description,
+            url: `${siteUrl}/products/${slug}`,
+            images: [product.imageUrl],
+        },
+        robots: { index: true, follow: true },
     };
 }
+
 
 
 // This is a Server Component
