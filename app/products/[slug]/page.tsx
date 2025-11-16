@@ -26,7 +26,8 @@ interface ProductPageProps {
 // 2. Dynamic Metadata (SEO)
 // -------------------------
 export async function generateMetadata({ params }: ProductPageProps) {
-    const product = getProductBySlug(params.slug);
+    const { slug } = params;
+    const product = getProductBySlug(slug);
 
     if (!product) {
         return {
