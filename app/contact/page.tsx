@@ -13,6 +13,7 @@ import {
     Send
 } from "lucide-react";
 import { ElementType } from "react"; // <-- 1. IMPORT ElementType
+import ContactSection from "@/components/common/ContactSection";
 
 
 export const metadata = {
@@ -75,10 +76,13 @@ export default function ContactPage() {
                 </div>
             </nav>
 
-            {/* --- 3. Main Content Area --- */}
+            <ContactSection />
+
+
+            {/* --- 3. Main Content Area --- *
             <section className="py-16 lg:py-24">
                 <div className="container mx-auto px-6">
-                    {/* Section Header */}
+                    // {/* Section Header 
                     <div className="max-w-3xl mx-auto text-center mb-16">
                         <h2
                             className="text-4xl lg:text-5xl font-extrabold mt-3 mb-6 text-gray-900 leading-tight"
@@ -95,10 +99,10 @@ export default function ContactPage() {
                         </p>
                     </div>
 
-                    {/* Main Grid: Form + Info */}
+                    {/* Main Grid: Form + Info 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
 
-                        {/* Column 1: Form */}
+                        {/* Column 1: Form 
                         <div
                             className="bg-white p-8 lg:p-10 rounded-xl shadow-2xl border border-gray-100"
                             data-aos="fade-right"
@@ -183,13 +187,13 @@ export default function ContactPage() {
                             </form>
                         </div>
 
-                        {/* Column 2: Info & Map */}
+                        {/* Column 2: Info & Map 
                         <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
                             <h3 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">
                                 Contact Details
                             </h3>
 
-                            {/* Info List */}
+                            {/* Info List *
                             <ul className="space-y-4 mb-8">
                                 <li className="flex items-start">
                                     <MapPin size={24} className="shrink-0 mr-4 mt-1 text-blue-600" />
@@ -210,12 +214,12 @@ export default function ContactPage() {
                                     <div>
                                         <h4 className="text-lg font-semibold text-gray-900">Email</h4>
                                         <p className="text-gray-600">irshadali90905@gmail.com</p>
-                                        {/* <p className="text-gray-600">abdulaziz230693@gmail.com</p> */}
+                                        {/* <p className="text-gray-600">abdulaziz230693@gmail.com</p> *
                                     </div>
                                 </li>
                             </ul>
 
-                            {/* Follow Us */}
+                            {/* Follow Us *
                             <h3 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">
                                 Follow Us
                             </h3>
@@ -225,7 +229,7 @@ export default function ContactPage() {
                                 <SocialIcon href="#" icon={Linkedin} name='linkedin' />
                             </div>
 
-                            {/* Map */}
+                            {/* Map *
                             <div className="rounded-xl shadow-lg overflow-hidden h-96">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4441.56151626964!2d86.07756867610543!3d26.217859389604666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39edcfcf1ba20f81%3A0xf6dc5bf2cd77afd7!2sSakri%20Post%20Office!5e1!3m2!1sen!2sin!4v1763304389016!5m2!1sen!2sin"
@@ -241,6 +245,7 @@ export default function ContactPage() {
                     </div>
                 </div>
             </section>
+            */}
         </div>
     );
 }

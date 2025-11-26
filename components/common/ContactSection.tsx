@@ -1,7 +1,25 @@
+"use client";
 import Link from 'next/link';
 import { Send } from 'lucide-react';
+import { useState } from 'react';
 
 export default function ContactSection() {
+    const [result, setResult] = useState("");
+
+    const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+
+        formData.append("access_key", "ccdce28e-4f86-4c42-9a2b-9b6e3252d85c");
+
+        const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData,
+        });
+
+        const data = await res.json();
+        setResult(data.success ? "Success!" : "Error");
+    };
     return (
         <section className="py-20 lg:py-32 bg-gray-50">
             <div className="container mx-auto px-6">
@@ -34,7 +52,7 @@ export default function ContactSection() {
                         data-aos="fade-right"
                         data-aos-delay="300"
                     >
-                        <form action="#" method="POST" className="space-y-6">
+                        <form onSubmit={onSubmit} className="space-y-6">
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                                     Name
@@ -109,6 +127,7 @@ export default function ContactSection() {
                                     Submit
                                     <Send className="w-5 h-5 ml-2" />
                                 </button>
+                                <p>{result}</p>
                             </div>
                         </form>
                     </div>
