@@ -17,9 +17,9 @@ import ContactSection from "@/components/common/ContactSection";
 
 
 export const metadata = {
-    title: "Contact Star Refrigeration & Air Conditioning | Call +91 8178198555",
+    title: "Contact Star Tech Refrigeration & Air Conditioning | Call +91 8178198555",
     description:
-        "Get in touch with Star Refrigeration & Air Conditioning for cold rooms, walk-in freezers, banana ripening chambers, and HVAC solutions.",
+        "Get in touch with Star Tech Refrigeration & Air Conditioning for cold rooms, walk-in freezers, banana ripening chambers, and HVAC solutions.",
     alternates: {
         canonical: "https://www.starrefrigeration.in/contact",
     },
@@ -32,7 +32,7 @@ export default function ContactPage() {
             <section className="relative h-[50vh] w-full overflow-hidden flex items-center justify-center p-6 text-center">
                 <Image
                     src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2940&auto=format&fit=crop"
-                    alt="Contact Star Refrigeration"
+                    alt="Contact Star Tech Refrigeration"
                     fill
                     style={{ objectFit: "cover" }}
                     priority
@@ -63,7 +63,7 @@ export default function ContactPage() {
                 <div className="container mx-auto px-6 py-3">
                     <ol className="flex items-center space-x-2 text-sm text-gray-500">
                         <li>
-                            <Link href="/" className="flex items-center hover:text-blue-600 transition-colors" aria-label="Contact Star Refrigeration">
+                            <Link href="/" className="flex items-center hover:text-blue-600 transition-colors" aria-label="Contact Star Tech Refrigeration">
                                 <Home size={16} className="mr-2" />
                                 Home
                             </Link>
@@ -258,7 +258,7 @@ function SocialIcon({ href, icon: Icon, name }: { href: string; icon: ElementTyp
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full text-blue-600 hover:bg-indigo-700 hover:text-white transition-all"
-            aria-label={`${name} Star Refrigeration`}
+            aria-label={`${name} Star Tech Refrigeration`}
         >
             <Icon size={24} />
         </Link>

@@ -114,16 +114,16 @@ export default function Header() {
                     <div className="flex justify-between items-center h-20">
 
                         {/* Logo */}
-                        <Link href="/" className={logoClasses} aria-label="Star Refrigeration">
-                            Star Refrigeration
+                        <Link href="/" className={logoClasses} aria-label="Star Tech Refrigeration">
+                            Star Tech Refrigeration
                         </Link>
 
                         {/* Desktop Navigation */}
                         <div className="hidden lg:flex items-center space-x-8">
-                            <Link href="/" className={linkClasses} aria-label="Star Refrigeration">
+                            <Link href="/" className={linkClasses} aria-label="Star Tech Refrigeration">
                                 Home
                             </Link>
-                            <Link href="/about" className={linkClasses} aria-label="About Star Refrigeration">
+                            <Link href="/about" className={linkClasses} aria-label="About Star Tech Refrigeration">
                                 About Us
                             </Link>
 
@@ -152,7 +152,7 @@ export default function Header() {
                                                 key={product.href}
                                                 href={product.href}
                                                 className="block px-4 py-3 rounded-md hover:bg-slate-100 text-sm font-medium text-slate-700 transition-colors"
-                                                aria-label={`${product.name} Star Refrigeration`}
+                                                aria-label={`${product.name} Star Tech Refrigeration`}
                                             >
                                                 {product.name}
                                             </Link>
@@ -162,7 +162,7 @@ export default function Header() {
                             </div>
 
                             {/* Contact CTA */}
-                            <Link href="/contact" className={ctaButtonClasses} aria-label=" Contact Star Refrigeration">
+                            <Link href="/contact" className={ctaButtonClasses} aria-label=" Contact Star Tech Refrigeration">
                                 Contact Us
                             </Link>
                         </div>
@@ -193,8 +193,8 @@ export default function Header() {
 
                     {/* Mobile Menu Header */}
                     <div className="flex justify-between items-center h-20 px-6 border-b border-slate-200">
-                        <Link href="/" aria-label="Star Refrigeration" onClick={closeMobileMenu} className="text-xl font-extrabold text-indigo-600">
-                            Star Refrigeration
+                        <Link href="/" aria-label="Star Tech Refrigeration" onClick={closeMobileMenu} className="text-xl font-extrabold text-indigo-600">
+                            Star Tech Refrigeration
                         </Link>
                         <button
                             onClick={closeMobileMenu}
@@ -212,7 +212,7 @@ export default function Header() {
                                 href="/"
                                 className="mobile-link"
                                 onClick={closeMobileMenu}
-                                aria-label="Star Refrigeration"
+                                aria-label="Star Tech Refrigeration"
                             >
                                 Home
                             </Link>
@@ -220,7 +220,7 @@ export default function Header() {
                                 href="/about"
                                 className="mobile-link"
                                 onClick={closeMobileMenu}
-                                aria-label="About Star Refrigeration"
+                                aria-label="About Star Tech Refrigeration"
                             >
                                 About Us
                             </Link>
@@ -249,7 +249,7 @@ export default function Header() {
                                                 href={product.href}
                                                 className="block py-3 text-base text-slate-600 hover:text-indigo-600 transition-colors"
                                                 onClick={handleProductLinkClick}
-                                                aria-label={`${product.name} Star Refrigeration`}
+                                                aria-label={`${product.name} Star Tech Refrigeration`}
                                             >
                                                 {product.name}
                                             </Link>
@@ -266,7 +266,7 @@ export default function Header() {
                             href="/contact"
                             className="block w-full text-center px-5 py-3 rounded-lg text-base font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
                             onClick={closeMobileMenu}
-                            aria-label="Contact Star Refrigeration"
+                            aria-label="Contact Star Tech Refrigeration"
                         >
                             Contact Us
                         </Link>

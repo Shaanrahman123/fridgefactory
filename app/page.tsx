@@ -8,19 +8,19 @@ import QualityAssurance from "@/components/home/QualityAssurance";
 import TestimonialSection from "@/components/home/Testimonial";
 
 export const metadata = {
-  title: "Star Refrigeration & Air Conditioning – Cold Rooms, Chillers, Ripening Chambers",
+  title: "Star Tech Refrigeration & Air Conditioning – Cold Rooms, Chillers, Ripening Chambers",
   description:
-    "Star Refrigeration specializes in cold rooms, fruit ripening chambers, PUF panel rooms, chillers, and HVAC solutions across India. Trusted since 2015.",
+    "Star Tech Refrigeration specializes in cold rooms, fruit ripening chambers, PUF panel rooms, chillers, and HVAC solutions across India. Trusted since 2015.",
   alternates: {
     canonical: "https://www.starrefrigeration.in/",
   },
   openGraph: {
-    title: "Star Refrigeration & Air Conditioning",
+    title: "Star Tech Refrigeration & Air Conditioning",
     description:
       "Your trusted partner for cold storage, ripening chambers, chillers, and HVAC systems.",
     url: "https://www.starrefrigeration.in/",
     type: "website",
-    siteName: "Star Refrigeration",
+    siteName: "Star Tech Refrigeration",
   },
 };
 

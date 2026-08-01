@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: ProductPageProps) {
 
     if (!product) {
         return {
-            title: "Product Not Found | Star Refrigeration",
+            title: "Product Not Found | Star Tech Refrigeration",
             description: "This product does not exist.",
             alternates: { canonical: siteUrl + "/" },
             robots: { index: false, follow: false },
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: ProductPageProps) {
     }
 
     return {
-        title: `${product.name} | Star Refrigeration`,
+        title: `${product.name} | Star Tech Refrigeration`,
         description: product.shortDescription || product.description,
         alternates: { canonical: `${siteUrl}/products/${product.name}` },
         openGraph: {
@@ -68,7 +68,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center py-20">
                 <h1 className="text-4xl font-bold text-gray-900 mb-4">Product Not Found</h1>
                 <p className="text-lg text-gray-600 mb-8">Could not find product for slug: {params.slug}</p>
-                <Link href="/" aria-label="Star Refrigeration" className="inline-flex items-center px-6 py-3 bg-indigo-700 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-800 transition-colors">
+                <Link href="/" aria-label="Star Tech Refrigeration" className="inline-flex items-center px-6 py-3 bg-indigo-700 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-800 transition-colors">
                     <ArrowLeft className="w-5 h-5 mr-2" /> Back to Home
                 </Link>
             </div>
@@ -106,7 +106,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 <div className="container mx-auto px-6 py-3">
                     <ol className="flex items-center space-x-2 text-sm text-gray-500">
                         <li>
-                            <Link href="/" aria-label="Star Refrigeration" className="flex items-center hover:text-blue-600 transition-colors">
+                            <Link href="/" aria-label="Star Tech Refrigeration" className="flex items-center hover:text-blue-600 transition-colors">
                                 <Home size={16} className="mr-2" />
                                 Home
                             </Link>

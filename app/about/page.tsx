@@ -15,9 +15,9 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-    title: "About Star Refrigeration & Air Conditioning | Since 2015",
+    title: "About Star Tech Refrigeration & Air Conditioning | Since 2015",
     description:
-        "Learn about Star Refrigeration & Air Conditioning, experts in cold rooms, fruit ripening chambers, PUF panels, blast freezers and HVAC solutions.",
+        "Learn about Star Tech Refrigeration & Air Conditioning, experts in cold rooms, fruit ripening chambers, PUF panels, blast freezers and HVAC solutions.",
     alternates: {
         canonical: "https://www.starrefrigeration.in/about",
     },
@@ -26,7 +26,7 @@ export const metadata = {
 export default function AboutPage() {
 
 
-    const aboutText = "For anyone looking for safe and effective measures to store various items under controlled temperatures, our products and services are the best choice. We are Star Refrigeration And Air Conditioning, experts in offering bespoke fruit ripening and allied solutions."
+    const aboutText = "For anyone looking for safe and effective measures to store various items under controlled temperatures, our products and services are the best choice. We are Star Tech Refrigeration And Air Conditioning, experts in offering bespoke fruit ripening and allied solutions."
     const subText = "We constantly improve our products as per changing technology and also offer our customer advantageous deals on Walk-in Freezer Servicing, PUF Panel Room Maintenance, etc."
 
     const keyPoints = [
@@ -41,7 +41,7 @@ export default function AboutPage() {
             <section className="relative h-[50vh] w-full overflow-hidden flex items-center justify-center p-6 text-center">
                 <Image
                     src={"/images/cold-rooms.svg"}
-                    alt="Contact Star Refrigeration"
+                    alt="Contact Star Tech Refrigeration"
                     fill
                     style={{ objectFit: "cover" }}
                     priority
@@ -76,7 +76,7 @@ export default function AboutPage() {
                             <Link
                                 href="/"
                                 className="flex items-center hover:text-indigo-600 transition-colors"
-                                aria-label="Home Star Refrigeration"
+                                aria-label="Home Star Tech Refrigeration"
                             >
                                 <Home size={16} className="mr-2" />
                                 Home
@@ -115,7 +115,7 @@ export default function AboutPage() {
                             <div className="bg-blue-50 p-4 rounded-xl shadow-md">
                                 <Image
                                     src="https://images.unsplash.com/photo-1760463921652-78b38572da45?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop"
-                                    alt="Modern Star Refrigeration cold storage facility"
+                                    alt="Modern Star Tech Refrigeration cold storage facility"
                                     width={600}
                                     height={450}
                                     className="rounded-lg shadow-xl object-cover w-full h-auto"
@@ -191,7 +191,7 @@ export default function AboutPage() {
                                      hover:shadow-lg hover:-translate-y-0.5 transform transition-all duration-300 ease-in-out"
                                 data-aos="fade-up" // Fades in from the bottom
                                 data-aos-delay="900" // Starts last
-                                aria-label="Learn more about Star Refrigeration and Air Conditioning"
+                                aria-label="Learn more about Star Tech Refrigeration And Air Conditioning"
                             >
                                 Read More
                                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -210,7 +210,7 @@ export default function AboutPage() {
                             className="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight"
                             data-aos="fade-up"
                         >
-                            Key Facts of Star Refrigeration
+                            Key Facts of Star Tech Refrigeration
                         </h2>
                     </div>
 

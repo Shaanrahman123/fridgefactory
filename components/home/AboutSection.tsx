@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { CheckCircle, ArrowRight, Award } from 'lucide-react'
 
 // Text content (no changes)
-const aboutText = "For anyone looking for safe and effective measures to store various items under controlled temperatures, our products and services are the best choice. We are Star Refrigeration And Air Conditioning, experts in offering bespoke fruit ripening and allied solutions."
+const aboutText = "For anyone looking for safe and effective measures to store various items under controlled temperatures, our products and services are the best choice. We are Star Tech Refrigeration And Air Conditioning, experts in offering bespoke fruit ripening and allied solutions."
 const subText = "We constantly improve our products as per changing technology and also offer our customer advantageous deals on Walk-in Freezer Servicing, PUF Panel Room Maintenance, etc."
 
 const keyPoints = [
@@ -37,7 +37,7 @@ export default function AboutSection() {
                         <div className="bg-blue-50 p-4 rounded-xl shadow-md">
                             <Image
                                 src="https://images.unsplash.com/photo-1760463921652-78b38572da45?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop"
-                                alt="Modern Star Refrigeration cold storage facility"
+                                alt="Modern Star Tech Refrigeration cold storage facility"
                                 width={600}
                                 height={450}
                                 className="rounded-lg shadow-xl object-cover w-full h-auto"
@@ -113,7 +113,7 @@ export default function AboutSection() {
                                      hover:shadow-lg hover:-translate-y-0.5 transform transition-all duration-300 ease-in-out"
                             data-aos="fade-up" // Fades in from the bottom
                             data-aos-delay="900" // Starts last
-                            aria-label="About Star Refrigeration"
+                            aria-label="About Star Tech Refrigeration"
                         >
                             Read More
                             <ArrowRight className="w-5 h-5 ml-2" />

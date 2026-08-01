@@ -135,7 +135,7 @@ export default function ContactSection() {
                     <div data-aos="fade-left" data-aos-delay="300">
                         <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 mb-6">
                             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                                Star Refrigeration
+                                Star Tech Refrigeration
                             </h3>
                             <p className="text-gray-600 leading-relaxed">
                                 Village-Sakri,Post-Sakri Madhubani,Bihar-847239
