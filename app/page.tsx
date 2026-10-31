@@ -24,6 +24,8 @@ export const metadata = {
   },
 };
 
+// Home content is hidden while SHOW_SERVER_EXPIRED_PAGE is true in config/maintenance.ts
+
 export default function Home() {
   return (
     <main>

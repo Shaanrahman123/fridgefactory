@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import { AosProvider } from "@/components/AosProvider";
 import Header from "@/components/home/Header";
 import Footer from "@/components/common/Footer";
+import ServerExpiredPage from "@/components/maintenance/ServerExpiredPage";
+import { SHOW_SERVER_EXPIRED_PAGE } from "@/config/maintenance";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -34,14 +36,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AosProvider>
-          <Header />
-          <div className="-mt-20">
-            {children}
-            {/* You can add a Footer component here later */}
-          </div>
-          <Footer />
-        </AosProvider>
+        {SHOW_SERVER_EXPIRED_PAGE ? (
+          <ServerExpiredPage />
+        ) : (
+          <AosProvider>
+            <Header />
+            <div className="-mt-20">
+              {children}
+              {/* You can add a Footer component later */}
+            </div>
+            <Footer />
+          </AosProvider>
+        )}
       </body>
     </html>
   );
